@@ -18,5 +18,16 @@ public abstract class Atraccion {
 		this.cupoMax = cupoMax;
 		
 	}
+	public static  List<Atraccion> listaDeAtracciones(Usuario usuario, List<Atraccion> atracciones) {
+		TipoDeAtraccion tipo = usuario.getAtraccion();
+		List <Atraccion> listaAtracciones = atracciones.stream()
+				.filter(atraccion -> atraccion.getTipo() == tipo)
+				.collect(Collectors.toList());	
+		return listaAtracciones;
+	}
+	
+	public static void ordenarAtraccionPorCosto(List<Atraccion> lista) {
+		Collections.sort(lista, new CostoComparacion());
+	}
 
 }
