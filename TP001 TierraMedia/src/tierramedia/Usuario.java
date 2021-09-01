@@ -29,6 +29,14 @@ public class Usuario {
 		return nombre;
 	}
 	
+	public void visitarAtraccion(Atraccion unaAtraccion) {
+		if(this.getPresupuesto() < unaAtraccion.getCosto() || this.getTiempoDisponible() < unaAtraccion.getTiempoPromedio()) {
+			throw new Error("No puede acceder a la atraccion, saldo o tiempo insuficiente");
+		}
+		this.tiempoDisponible -= unaAtraccion.getTiempoPromedio();
+		this.presupuesto -= unaAtraccion.getCosto();
+	}
+	
 	
 
 }
