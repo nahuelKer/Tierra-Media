@@ -5,10 +5,7 @@ public abstract class Atraccion {
 	private int costo;
 	private int tiempoMedio;
 	private int cupoMax;
-	private int prueba;
-	
-	public Atraccion(){
-	}
+
 	
 
 	public Atraccion(String nombre, int costo, int tiempoMedio, int cupoMax) {
