@@ -1,7 +1,7 @@
 package tierramedia;
 
 public abstract class Atraccion {
-	private String nombre;
+	private String nombrE;
 	private int costo;
 	private int tiempoMedio;
 	private int cupoMax;
