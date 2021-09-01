@@ -5,6 +5,7 @@ public abstract class Atraccion {
 	private int costo;
 	private int tiempoMedio;
 	private int cupoMax;
+	private int prueba;
 	
 	public Atraccion(){
 	}
