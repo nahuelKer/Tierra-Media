@@ -3,6 +3,7 @@ package tierramedia;
 public class Promociones {
   
   private Atraccion atraccion;
+  private String prueba_git;
   
   Promociones(){ }
   
